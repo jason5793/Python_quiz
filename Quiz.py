@@ -2,7 +2,7 @@ questions=("How many elements are there in the periodic table ?",
           "When did India gain indpendce ? ",
           "What is the largest river in India ?",
           "Which of the following is the highest moutain ? ",
-          "who is the creator of Python program ?",
+          "Who is the creator of Python program ?",
           "What is the captial of India ")
 
 options=(("A.118","B.120","C.130","D.140"),
