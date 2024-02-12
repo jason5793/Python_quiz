@@ -3,7 +3,7 @@ questions=("How many elements are there in the periodic table ?",
           "What is the largest river in India ?",
           "Which of the following is the highest moutain ? ",
           "Who is the creator of Python program ?",
-          "What is the captial of India ")
+          "What is the captial of India ?")
 
 options=(("A.118","B.120","C.130","D.140"),
         ("A.1947","B.1950","C.1945","D.1946"),
@@ -44,3 +44,6 @@ for guess in guesses:
     print(guess,end=" ")
 print()
 
+score=int(score/len(questions)*100)
+
+print(f"Your score is:{score}")
