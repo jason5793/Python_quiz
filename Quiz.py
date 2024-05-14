@@ -12,6 +12,21 @@ questions = [
         "options": ["Venus", "Mars", "Jupiter", "Saturn"],
         "answer": "Mars"
     },
+    {
+        "question": "What is the tallest mountain in the world?",
+        "options": ["Mount Everest", "K2", "Kangchenjunga", "Lhotse"],
+        "answer": "Mount Everest"
+    },
+    {
+        "question": "Who painted the Mona Lisa?",
+        "options": ["Leonardo da Vinci", "Vincent van Gogh", "Pablo Picasso", "Michelangelo"],
+        "answer": "Leonardo da Vinci"
+    },
+    {
+        "question": "Which gas do plants absorb during photosynthesis?",
+        "options": ["Oxygen", "Nitrogen", "Carbon Dioxide", "Hydrogen"],
+        "answer": "Carbon Dioxide"
+    }
     # Add more questions here
 ]
 
