@@ -1,0 +1,62 @@
+[
+    {
+        "question": "What is the capital of France?",
+        "options": ["a. Paris", "b. London", "c. Rome", "d. Berlin"],
+        "answer": "a"
+    },
+    {
+        "question": "Which planet is known as the Red Planet?",
+        "options": ["a. Venus", "b. Mars", "c. Jupiter", "d. Saturn"],
+        "answer": "b"
+    },
+    {
+        "question": "What is the chemical symbol for water?",
+        "options": ["a. H2O", "b. CO2", "c. NaCl", "d. O2"],
+        "answer": "a"
+    },
+    {
+        "question": "Who wrote 'Romeo and Juliet'?",
+        "options": ["a. William Shakespeare", "b. Charles Dickens", "c. Jane Austen", "d. Mark Twain"],
+        "answer": "a"
+    },
+    {
+        "question": "What is the tallest mammal?",
+        "options": ["a. Elephant", "b. Giraffe", "c. Whale", "d. Lion"],
+        "answer": "b"
+    },
+    {
+        "question": "Which country is famous for the Great Wall?",
+        "options": ["a. China", "b. Italy", "c. India", "d. Brazil"],
+        "answer": "a"
+    },
+     {
+        "question": "Who painted the Mona Lisa?",
+        "options": ["a. Leonardo da Vinci", "b. Pablo Picasso", "c. Vincent van Gogh", "d. Michelangelo"],
+        "answer": "a"
+    },
+    {
+        "question": "What is the largest organ in the human body?",
+        "options": ["a. Heart", "b. Liver", "c. Skin", "d. Brain"],
+        "answer": "c"
+    },
+    {
+        "question": "Which planet is known as the 'Morning Star' and 'Evening Star'?",
+        "options": ["a. Mercury", "b. Venus", "c. Mars", "d. Jupiter"],
+        "answer": "b"
+    },
+    {
+        "question": "Who is known as the father of modern physics?",
+        "options": ["a. Isaac Newton", "b. Albert Einstein", "c. Galileo Galilei", "d. Nikola Tesla"],
+        "answer": "b"
+    },
+    {
+        "question": "What is the chemical symbol for gold?",
+        "options": ["a. Au", "b. Ag", "c. Fe", "d. Cu"],
+        "answer": "a"
+    },
+    {
+        "question": "Which ocean is the largest?",
+        "options": ["a. Atlantic Ocean", "b. Indian Ocean", "c. Pacific Ocean", "d. Arctic Ocean"],
+        "answer": "c"
+    }
+]
