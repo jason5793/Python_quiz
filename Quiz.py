@@ -1,56 +1,45 @@
 import random
-
-# Define your questions along with their correct answers and options
+# Define your questions and options
 questions = [
     {
         "question": "What is the capital of France?",
-        "options": ["Paris", "London", "Berlin", "Rome"],
-        "answer": "Paris"
+        "options": ["1. Paris", "2. London", "3. Rome", "4. Berlin"],
+        "answer": 1
     },
     {
         "question": "Which planet is known as the Red Planet?",
-        "options": ["Venus", "Mars", "Jupiter", "Saturn"],
-        "answer": "Mars"
+        "options": ["1. Venus", "2. Mars", "3. Jupiter", "4. Saturn"],
+        "answer": 2
     },
     {
-        "question": "What is the tallest mountain in the world?",
-        "options": ["Mount Everest", "K2", "Kangchenjunga", "Lhotse"],
-        "answer": "Mount Everest"
-    },
-    {
-        "question": "Who painted the Mona Lisa?",
-        "options": ["Leonardo da Vinci", "Vincent van Gogh", "Pablo Picasso", "Michelangelo"],
-        "answer": "Leonardo da Vinci"
-    },
-    {
-        "question": "Which gas do plants absorb during photosynthesis?",
-        "options": ["Oxygen", "Nitrogen", "Carbon Dioxide", "Hydrogen"],
-        "answer": "Carbon Dioxide"
+        "question": "What is the chemical symbol for water?",
+        "options": ["1. H2O", "2. CO2", "3. NaCl", "4. O2"],
+        "answer": 1
     }
-    # Add more questions here
 ]
 
-# Function to shuffle the options for a question
-def shuffle_options(options):
-    shuffled_options = options[:]
-    random.shuffle(shuffled_options)
-    return shuffled_options
+# Shuffle the options for each question
+for question in questions:
+    random.shuffle(question["options"])
 
-# Function to present the quiz and get user's answers
-def take_quiz(questions):
-    score = 0
-    for i, question in enumerate(questions, 1):
-        print(f"Question {i}: {question['question']}")
-        shuffled_options = shuffle_options(question['options'])
-        for idx, option in enumerate(shuffled_options, 1):
-            print(f"{idx}. {option}")
-        user_answer = input("Your answer: ").strip().title()  # Convert to title case
-        if user_answer == question['answer']:
-            print("Correct!\n")
+# Present the shuffled options to the user and take the answer
+score = 0
+for i, question in enumerate(questions, 1):
+    print(f"\n{i}. {question['question']}")
+    for option in question["options"]:
+        print(option)
+    user_answer = input("Enter your answer (number): ")
+    
+    # Validate the answer and provide feedback
+    if user_answer.isdigit() and 1 <= int(user_answer) <= len(question["options"]):
+        user_answer = int(user_answer)
+        if user_answer == question["answer"]:
+            print("Correct!")
             score += 1
         else:
-            print(f"Wrong! The correct answer is: {question['answer']}\n")
-    print(f"Your final score is: {score}/{len(questions)}")
+            print("Incorrect.")
+    else:
+        print("Invalid input. Please enter a number corresponding to the options.")
 
-# Run the quiz
-take_quiz(questions)
+# Display the final score
+print(f"\nYour final score is {score} out of {len(questions)}.")
