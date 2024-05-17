@@ -1,5 +1,7 @@
 import json
 import random
+import time
+import threading
 # Load questions from the JSON file
 with open("quiz_questions.json", "r") as file:
     questions = json.load(file)
